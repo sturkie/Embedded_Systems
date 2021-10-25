@@ -22,6 +22,8 @@ Part 3 runs similar to part 2. Here we have a variable named indicator that look
 #### Part 4
 This exercise features two outputs, PORTB and PORTC. PORTB outputs the input masked with 0xF0 and shifts it 4 to the right. PORTC outputs the input masked with 0x0F and shifts it 4 to the left.
 ## Lab 4
+### State Machines
+This lab is the introduction to using state machines and implementing them in C with user defined data types and switch cases.
 #### Part 1
 In this exercise, we create our first state machine. We use two switch statements, one for transitions in between states and one for state actions. Our first state is the LED_One state. If the button (input A at b0) is equal to 1 (being pushed), then the state is set to LED_Two. Otherwise, we remain in state LED_One. While in LED_One, our output is set to 0x01. If the button is pressed in state LED_Two, then the state is set to LED_One. Otherwise, we remain in state LED_Two. While in LED_Two, our output is set to 0x02.
 #### Part 2
@@ -30,7 +32,6 @@ In this exercise, we haave two inputs, buttonOne (b0) and buttonTwo (b1). Using 
 This exercise mimicks a security system. The state machine can only reach the unlock state if a specific combination is correctly input using 3 buttons. The correct combination in this case is pound (input b2), y (b1), and not x (!b0). The system begins in the lock state where the output on PORTB is set to 0x00. If the system detects someone already inside (b7), then the state machine will automatically go back to the lock state. When the unlock state is reached, the output on PORTB is set to 0x01. From the unlock state, the system can only be locked again if it detects someone inside, otherwise it remains unlocked.
 #### Part 4
 This excerside is similar to part 3 but features additional transitions in the unlock state for further combination input.
-### State Machines
 ## Lab 5
 ### Introduction to Hardware
 ## Lab 6
