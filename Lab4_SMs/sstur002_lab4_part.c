@@ -1,5 +1,4 @@
 /*	Author: sstur002
- *  Partner(s) Name: Raajitha Rajkumar
  *	Lab Section:
  *	Assignment: Lab #4  Exercise #1
  *	Exercise Description: [optional - include for your own benefit]
